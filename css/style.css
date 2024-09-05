@@ -1,0 +1,34 @@
+div.thumbnails{
+    height: 10rem;
+}
+
+img.adaptive-cover{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+article.thumbnail{
+    width: calc(100% / 5);
+    filter: brightness(0.5);
+}
+
+article.thumbnail.active{
+    filter: brightness(1.1);
+    border: .25rem white solid;
+}
+
+article.thumbnail:hover{
+    filter: brightness(1);
+}
+
+article.thumbnail > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+div.image-details{
+    bottom: 0;
+    background: rgba(0,0,0,0.66);
+}
